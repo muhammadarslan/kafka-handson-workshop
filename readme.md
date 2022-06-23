@@ -1,4 +1,4 @@
-# Kafka Handson workshop
+# Kafka Handson Workshop
 This workshop is intended to learn the basics of kafka. This workshop is developed in spring-boot. 
 
 Commands for kafka-cli can be found here. [Kafka Readme](kafka-readme.md)
