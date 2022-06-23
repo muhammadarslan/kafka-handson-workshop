@@ -21,7 +21,7 @@ Start movie consumer
 cd movie-consumer
 mvn spring-boot:run
 ```
-### Visualize the kafka dashboard and schema registry
+### Visualize the Kafka UI Dashboard and Schema Registry
 Kafka Schema Registry
 ```bash
 http://0.0.0.0:8081/schemas/
@@ -31,9 +31,9 @@ Kafka UI Dashboard
 http://0.0.0.0:8080/
 ```
 ## Workshop
-### Create Rating producer
+### Create Rating Producer
 With inspiration from existing ```movie-prodcuer``` create similar ```ratings-producer```
-### Create Rating consumer
+### Create Rating Consumer
 With inspiration from existing ```movie-consumer``` create similar ```ratings-consumer```
 
 ### Run Ratings Processor
