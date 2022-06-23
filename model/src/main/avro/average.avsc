@@ -1,0 +1,11 @@
+{
+  "namespace": "com.kafka.handson",
+  "type": "record",
+  "name": "Average",
+  "fields": [
+    {
+      "name": "average",
+      "type": "double"
+    }
+  ]
+}
