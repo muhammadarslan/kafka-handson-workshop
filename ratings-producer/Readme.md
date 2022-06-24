@@ -1,5 +1,5 @@
-## Movie Producer
-The module contains the movie producer application that reads the movies from ```movies.dat``` file and output that to kafka ```movies```topic.
+## Ratings Producer
+The module contains the ratings producer application that generates the random ratings for the movies and push it to ```ratings``` kafka topic. 
 
 **Build with maven**
 
