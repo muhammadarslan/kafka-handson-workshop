@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.handler.annotation.Header;
+import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.support.GenericMessage;
 import org.springframework.stereotype.Component;
 
@@ -17,7 +18,7 @@ public class MoviesConsumer {
 
   @KafkaListener(topics = "movies")
   public void listenMovies(
-      GenericMessage<Movie> message,
+      @Payload Movie message,
       @Header(KafkaHeaders.RECEIVED_PARTITION_ID) List<Integer> partitions,
       @Header(KafkaHeaders.RECEIVED_TOPIC) List<String> topics,
       @Header(KafkaHeaders.OFFSET) List<Long> offsets) {
